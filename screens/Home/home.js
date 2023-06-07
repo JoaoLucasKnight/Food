@@ -1,7 +1,9 @@
 import React from "react";
-import Button from "../../components/Button";
+import Button from "../../components/botao/Button";
 import { View, StyleSheet, Image } from "react-native";
-import Logo from "../../assets/logo.png"
+
+
+import Logo from "../../assets/logoCompleta.png"
 
 
 export default function Home() {
@@ -12,13 +14,14 @@ export default function Home() {
             </View>
 
             <View style={estilos.div2}>
-            
                 <Button />
                 <Button />
             </View>
         </View>
     </>
 };
+
+
 
 const estilos = StyleSheet.create({
     frame: {
@@ -47,8 +50,8 @@ const estilos = StyleSheet.create({
     logo:{
         justifyContent: "flex-end",
         alignItems: "center",
-        width: 200,
-        height: 157,
+        width: 305,
+        height: 240,
   },
 
     
