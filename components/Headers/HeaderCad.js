@@ -2,15 +2,14 @@ import react from "react";
 // import * as Svg from 'react-native-svg';
 import Logo from "../../assets/logoCompleta.png"
 import { Image, View, StyleSheet } from "react-native";
-import Proximo from "../botao/Proximo";
-import Voltar from "../botao/Voltar";
+import Invisivel from "../botao/invisivel";
 
 export default function HeaderCad (){
     return(
         <View style={estilos.box}>
-            <Voltar style={estilos.but} />
+            <Invisivel name='Voltar' style={estilos.but} />
                     <Image source={Logo} style={estilos.logo}/> 
-            <Proximo style={estilos.but}  />
+            <Invisivel name='Salvar' style={estilos.but}  />
         </View>
     )};
 
@@ -19,7 +18,8 @@ const estilos = StyleSheet.create ({
         flexDirection: "row",
         justifyContent: "space-between",
         alignItems: "center",
-        height: 110,
+        height: 120,
+        paddingHorizontal: 18
     },
 
     logo:{

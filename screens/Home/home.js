@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../../components/botao/Button";
+import But from "../../components/botao/But";
 import { View, StyleSheet, Image } from "react-native";
 
 
@@ -14,8 +14,8 @@ export default function Home() {
             </View>
 
             <View style={estilos.div2}>
-                <Button />
-                <Button />
+                <But name='Cliente'/>
+                <But name= 'Empresa'/>
             </View>
         </View>
     </>

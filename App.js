@@ -2,7 +2,8 @@ import react from "react";
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { Home } from "./screens/Home";
-import { Cadastro } from "./screens/Cadastro";
+import { CadastroCliente } from "./screens/Cadastro";
+import {CadastroEmpresa} from "./screens/Cadastro"
 import { Perfil } from "./screens/Perfil";
 import {Feed} from "./screens/Feed"
 
@@ -11,7 +12,8 @@ function MyStack() {
   return (
     <Stack.Navigator screenOptions={{ headerShown: false}}>
       <Stack.Screen name="Home" component={Home} />
-      <Stack.Screen name="Cadastro" component={Cadastro} />
+      <Stack.Screen name="CadastroCliente" component={CadastroCliente} />
+      <Stack.Screen name="CadastroEmpresa" component={CadastroEmpresa} />
       <Stack.Screen name="Perfil" component={Perfil} />
       <Stack.Screen name="Feed" component={Feed} />
     </Stack.Navigator>

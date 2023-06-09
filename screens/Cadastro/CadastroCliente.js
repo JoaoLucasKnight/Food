@@ -1,12 +1,14 @@
 import react from "react";
 import { Text, View, StyleSheet} from "react-native";
 import HeaderCad from "../../components/Headers/HeaderCad";
-
-export default function Cadastro(){
+import Avatar from "../../components/Form/Avatar";
+import ClienteForm from "../../components/Form/ClienteForm";
+export default function CadastroCliente(){
     return(
              <View style={estilos.frame}>
                 <HeaderCad/>
-                <Text style={estilos.texto}> Eis Aqui um formularios</Text>
+                <Avatar/>
+                <ClienteForm/>
             </View>
 )};
 

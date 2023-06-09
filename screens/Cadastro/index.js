@@ -1,3 +1,5 @@
-import Cadastro from "./Cadastro";
+import CadastroCliente from "./CadastroCliente";
+import CadastroEmpresa from "./CadastroEmpresa";
 
-export {Cadastro}
+export {CadastroCliente}
+export {CadastroEmpresa}

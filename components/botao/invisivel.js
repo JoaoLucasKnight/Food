@@ -2,14 +2,21 @@ import react from "react";
 import { Text, TouchableOpacity , StyleSheet} from "react-native";
 import { useNavigation } from '@react-navigation/native'; 
 
-export default function Proximo(){
+export default function invisivel(props){
 const navigation = useNavigation();
 
     return(
        <TouchableOpacity
-        onPress={()=> {navigation.navigate("Perfil")}} 
+        onPress={()=> 
+            {if(props.name == 'Salvar'){
+               return (navigation.navigate('Perfil'));
+                 } else if(props.name == 'Voltar') {
+                    return(navigation.goBack());
+                }
+            }       
+        } 
         style={estilos.invisivel}>
-            <Text style={estilos.texto} >Proximo</Text>
+            <Text style={estilos.texto} >{props.name}</Text>
        </TouchableOpacity>
     )
 }
@@ -19,12 +26,13 @@ const estilos= StyleSheet.create ({
         backgroundcolor: "#B0392C",
         width: 60,
         height: 20,
-        marginRight: 20
+        
     },
 
     texto:{
         fontSize: 16,
         lineHeight: 20,
-        color: "#FFD3CF"
+        color: "#FFD3CF",
+        textAlign: "center"
     }
 })

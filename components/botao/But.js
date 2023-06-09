@@ -2,14 +2,14 @@ import * as React from 'react';
 import { Text, StyleSheet, TouchableOpacity } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 
-export default function Button(){
+export default function But (props)  {
 const navigation = useNavigation();
 
     return (
         <TouchableOpacity 
-        onPress={()=> {navigation.navigate('Cadastro')}}
+        onPress={()=> {navigation.navigate(`Cadastro${props.name}`)}}
         style={estilos.botao}>
-            <Text style={estilos.texto}>users</Text>
+            <Text style={estilos.texto}>{props.name}</Text>
         </TouchableOpacity>
     )
 };
@@ -19,10 +19,10 @@ const navigation = useNavigation();
 
 const estilos = StyleSheet.create({
     botao:{
-        width: 240,
-        height: 30,
+        width: 180,
+        height: 32,
         backgroundColor: '#FFD3CF',
-        borderRadius: 16,
+        borderRadius: 32,
         marginVertical: 16
     },
 
@@ -30,9 +30,9 @@ const estilos = StyleSheet.create({
         fontStyle: 'normal',
         fontWeight: '500',
         fontSize: 12,
-        lineHeight: 30,
+        width: 180,
+        lineHeight: 32,
         display: 'flex',
-        alignItems: 'center',
         textAlign: 'center',
         color: '#7D291F',
       },
