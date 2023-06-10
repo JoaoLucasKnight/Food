@@ -1,15 +1,16 @@
 import React from "react";
 import Perfil from "./Perfil";
-import { StyleSheet, View } from "react-native";
+import { FlatList, StyleSheet, View } from "react-native";
+import ListaStory from "./ListaStory";
 
 export default function Storys(){
     return<>
         <View style={estilos.box}>
-            <Perfil/>
-            <Perfil/>
-            <Perfil/>
-            <Perfil/>
-            <Perfil/> 
+            <FlatList
+                data={ListaStory}
+                horizontal={true}
+                renderItem={({item})=> <Perfil{...item}/> }
+            /> 
         </View>
 
     </>
@@ -17,7 +18,6 @@ export default function Storys(){
 
 const estilos = StyleSheet.create ({
     box:{
-      flexDirection: "row",
-      justifyContent: "space-evenly"
+        paddingHorizontal: 6,
     },
 });
