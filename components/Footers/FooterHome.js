@@ -1,7 +1,7 @@
 import React from "react";
 import { View, StyleSheet,  TouchableOpacity } from "react-native";
-import { MaterialCommunityIcons } from '@expo/vector-icons';
-import { Ionicons } from '@expo/vector-icons';
+import { MaterialIcons } from '@expo/vector-icons';
+import { Feather } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native'; 
 
 export default function FooterHome(){
@@ -11,15 +11,16 @@ const navigation = useNavigation();
         <View style={estilos.box}  >
             <TouchableOpacity
             onPress={()=> navigation.navigate("Feed")}>
-                <MaterialCommunityIcons name="home-variant" size={32} color="#7D291F" />
+                <Feather name="home" size={32} color="#7D291F" />  
             </TouchableOpacity>
 
             <TouchableOpacity>
-                <Ionicons name="add" size={38} color="#7D291F" />  
+                <MaterialIcons name="add" size={32} color="#7D291F" />
             </TouchableOpacity>
 
-            <TouchableOpacity>
-            <Ionicons name="search" size={32} color="#7D291F" />
+            <TouchableOpacity
+            onPress={()=> navigation.navigate("Pesquisa")}>
+                <MaterialIcons name="search" size={32} color="#7D291F" />
             </TouchableOpacity>
         </View>
     );

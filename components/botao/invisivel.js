@@ -2,7 +2,7 @@ import react from "react";
 import { Text, TouchableOpacity , StyleSheet} from "react-native";
 import { useNavigation } from '@react-navigation/native'; 
 
-export default function invisivel(props){
+export default function Invisivel(props){
 const navigation = useNavigation();
 
     return(
@@ -15,23 +15,15 @@ const navigation = useNavigation();
                 }
             }       
         } 
-        style={estilos.invisivel}>
+        >
             <Text style={estilos.texto} >{props.name}</Text>
        </TouchableOpacity>
     )
 }
 
 const estilos= StyleSheet.create ({
-    invisivel:{
-        backgroundcolor: "#B0392C",
-        width: 60,
-        height: 20,
-        
-    },
-
     texto:{
-        fontSize: 16,
-        lineHeight: 20,
+        fontSize: 20,
         color: "#FFD3CF",
         textAlign: "center"
     }

@@ -2,7 +2,7 @@ import react from "react";
 // import * as Svg from 'react-native-svg';
 import Logo from "../../assets/logoCompleta.png"
 import { Image, View, StyleSheet } from "react-native";
-import Invisivel from "../botao/invisivel";
+import Invisivel from "../botao/Invisivel";
 
 export default function HeaderCad (){
     return(

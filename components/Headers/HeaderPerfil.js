@@ -6,16 +6,16 @@ export default function HeaderPerfil(){
         <View style={estilos.container}>
             <View style={estilos.boxAvatar} >
                 <View style={estilos.imagem}  >
-
+                    
                 </View>
             </View>
 
             <View style={estilos.boxStatus} >
-                <Text style={estilos.titulo} >Nome Perfil</Text>
+                <Text style={estilos.titulo} >Giovanna Martins</Text>
                 <Text style={estilos.titulo} >Descrição</Text>
                 <View style={estilos.conex}>    
-                    <Text style={estilos.conexTexto} >Seguindo</Text>
-                    <Text style={estilos.conexTexto}>Seguidores</Text>
+                    <Text style={estilos.conexTexto} >1 Seguindo</Text>
+                    <Text style={estilos.conexTexto}>50 Seguidores</Text>
                     <Text style={estilos.conexTexto}>Restaurantes</Text>
                 </View>
             </View>
