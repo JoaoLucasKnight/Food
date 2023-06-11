@@ -1,7 +1,7 @@
 import React from "react";
 import Perfil from "./Perfil";
 import { FlatList, StyleSheet, View } from "react-native";
-import ListaStory from "./ListaStory";
+import ListaStory from "./Listas/ListaStory";
 
 export default function Storys(){
     return<>

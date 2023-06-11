@@ -19,7 +19,7 @@ const navigation = useNavigation();
                     return (navigation.navigate('Ajuda'));
                     break; 
                 case 'Sair':
-                    return (navigation.navigate('Alterar'));
+                    return (navigation.navigate('Login'));
                     break;    
             }
         }}

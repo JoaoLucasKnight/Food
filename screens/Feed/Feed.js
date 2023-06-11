@@ -1,8 +1,9 @@
 import React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, FlatList } from "react-native";
 import HeaderFeed from "../../components/Headers/HeaderFeed";
 import FooterPerfil from "../../components/Footers/FooterPerfil";
 import Storys from "../../components/Storys";
+import ListaCartao from "../../components/Listas/ListaCartao";
 import Cartao from "../../components/Cartao";
 
 
@@ -13,7 +14,10 @@ export default function Feed(){
             <Storys/>
 
             <View style={estilos.box}>
-                <Cartao/>
+                <FlatList
+                    data={ListaCartao}
+                    renderItem={({item})=> <Cartao{...item}/>}
+                />
             </View>
 
             <FooterPerfil/>
@@ -29,6 +33,7 @@ const estilos = StyleSheet.create({
     },
 
     box:{
-        paddingHorizontal: 16
+        paddingHorizontal: 16,
+        marginBottom: 200,
     }
 });

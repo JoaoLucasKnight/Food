@@ -11,22 +11,22 @@ export default function HeaderPerfil(){
             </View>
 
             <View style={estilos.boxStatus} >
-                <Text style={estilos.titulo} >Giovanna Martins</Text>
-                <Text style={estilos.titulo} >Descrição</Text>
+                <Text style={estilos.titulo} >Joao Lucas </Text>
+                <Text style={estilos.titulo2} >Apaixonado por Churrasco </Text>
                 <View style={estilos.conex}>    
-                    <Text style={estilos.conexTexto} >1 Seguindo</Text>
-                    <Text style={estilos.conexTexto}>50 Seguidores</Text>
-                    <Text style={estilos.conexTexto}>Restaurantes</Text>
+                    <Text style={estilos.conexTexto} >1896 Seguindo</Text>
+                    <Text style={estilos.conexTexto}>580 Seguidores</Text>
+                    <Text style={estilos.conexTexto}>98 Restaurantes</Text>
                 </View>
             </View>
         </View>
 
         <View style={estilos.countainerNav}  >
             <TouchableOpacity> 
-                <Text style={estilos.titulo} > Avaliações </Text>
+                <Text style={estilos.titulo3} > Avaliações </Text>
             </TouchableOpacity>
             <TouchableOpacity> 
-                <Text style={estilos.titulo} > Recomendados </Text>
+                <Text style={estilos.titulo3} > Recomendados </Text>
             </TouchableOpacity>
         </View>
 
@@ -73,9 +73,25 @@ const estilos = StyleSheet.create ({
 
     titulo:{
         alignSelf: "center",
-        fontSize: 18,
+        fontSize: 24,
         fontStyle: 'normal',
-        fontWeight: '700',
+        fontWeight: 800,
+        color: "#7D291F"
+
+    },
+    titulo2:{
+        alignSelf: "center",
+        fontSize: 16,
+        fontStyle: 'normal',
+        fontWeight: 500,
+        color: "#7D291F"
+
+    },
+    titulo3:{
+        alignSelf: "center",
+        fontSize: 20,
+        fontStyle: 'normal',
+        fontWeight: 700,
         color: "#7D291F"
 
     },
