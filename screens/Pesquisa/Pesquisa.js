@@ -1,7 +1,7 @@
 import react from "react";
 import { StyleSheet, View, TextInput, FlatList } from "react-native";
 import FooterPesquisa from "../../components/Footers/FooterPesquisa";
-import Cartao from "../../components/Cartao";
+import Cartao from "../../components/Cartao/Cartao";
 import ListaCartao from "../../components/Listas/ListaCartao";
 
 export default function Pesquisa(){

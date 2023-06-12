@@ -4,7 +4,7 @@ import HeaderFeed from "../../components/Headers/HeaderFeed";
 import FooterPerfil from "../../components/Footers/FooterPerfil";
 import Storys from "../../components/Storys";
 import ListaCartao from "../../components/Listas/ListaCartao";
-import Cartao from "../../components/Cartao";
+import Cartao from "../../components/Cartao/Cartao";
 
 
 export default function Feed(){

@@ -1,7 +1,7 @@
 import react from "react";
 import { Image, StyleSheet, Text, View } from "react-native";
 import { Rating} from 'react-native-ratings';
-import pizza from "../assets/rait.png";
+import pizza from "../../assets/rait.png";
 
 export default function Cartao({perfil, nome, empresa, imagem}){
     return (
@@ -21,6 +21,7 @@ export default function Cartao({perfil, nome, empresa, imagem}){
                  ratingBackgroundColor="#FFD3CF"
                  ratingTextColor="#FFD3CF"
                  ratingCount={5}
+                 startingValue={5}
                  imageSize={30}
                  showRating={true}
                  style={{

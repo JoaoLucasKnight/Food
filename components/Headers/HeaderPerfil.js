@@ -1,17 +1,16 @@
 import React from "react";
-import { View, StyleSheet, Text, TouchableOpacity } from "react-native";
+import { View, StyleSheet, Text, TouchableOpacity, Image } from "react-native";
+import gael from "../../assets/Cartao/Avatar.jpg"
 
 export default function HeaderPerfil(){
     return<>
         <View style={estilos.container}>
             <View style={estilos.boxAvatar} >
-                <View style={estilos.imagem}  >
-                    
-                </View>
+                    <Image source={gael} style={estilos.imagem} />
             </View>
 
             <View style={estilos.boxStatus} >
-                <Text style={estilos.titulo} >Joao Lucas </Text>
+                <Text style={estilos.titulo} >Gael Knight</Text>
                 <Text style={estilos.titulo2} >Apaixonado por Churrasco </Text>
                 <View style={estilos.conex}>    
                     <Text style={estilos.conexTexto} >1896 Seguindo</Text>
@@ -65,7 +64,7 @@ const estilos = StyleSheet.create ({
         width: 60,
         height: 60,
         borderRadius: 60/2,
-        borderWidth: 1.5,
+        borderWidth: 3,
         borderColor: "#FC523F",
         backgroundColor: "#B0392C" 
 
