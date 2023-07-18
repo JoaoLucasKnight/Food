@@ -1,15 +1,24 @@
 import react from "react";
-import { Text, TouchableOpacity , StyleSheet} from "react-native";
+import { Text, TouchableOpacity , StyleSheet, Alert} from "react-native";
 import { useNavigation } from '@react-navigation/native'; 
+import novoCliente from "../../servicos/users";
 
-export default function Invisivel(props){
+export default  function Invisivel(props){
 const navigation = useNavigation();
 
     return(
        <TouchableOpacity
-        onPress={()=> 
+        onPress={async ()=> 
             {if(props.name == 'Salvar'){
-               return (navigation.navigate('Perfil'));
+                const resultado = await novoCliente(props.user.nome, props.user.user, props.user.email, props.user.telefone, props.user.senha)
+                console.log(resultado)
+                    if (resultado == 'sucesso'){
+                        return (navigation.navigate('Perfil', {user: props.user.user}));
+                    } else  if (resultado == 'erro'){
+                        Alert.alert("Algo deu errado" )
+                    }
+
+
                  } else if(props.name == 'Voltar') {
                     return(navigation.goBack());
                 }

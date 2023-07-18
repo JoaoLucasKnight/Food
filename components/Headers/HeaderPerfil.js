@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, StyleSheet, Text, TouchableOpacity, Image } from "react-native";
 import gael from "../../assets/Cartao/Avatar.jpg"
+import { pegarCliente } from "../../servicos/users";
 
-export default function HeaderPerfil(){
+export default function HeaderPerfil(props){
+    const [usuario, setusuario] = useState({})
+
+    //const resultado = pegarCliente (props.nome)
+    //setusuario = resultado;
+
     return<>
         <View style={estilos.container}>
             <View style={estilos.boxAvatar} >
@@ -24,7 +30,8 @@ export default function HeaderPerfil(){
             <TouchableOpacity> 
                 <Text style={estilos.titulo3} > Avaliações </Text>
             </TouchableOpacity>
-            <TouchableOpacity> 
+            <TouchableOpacity
+            onPress={()=> console.log(props.nome)}> 
                 <Text style={estilos.titulo3} > Recomendados </Text>
             </TouchableOpacity>
         </View>

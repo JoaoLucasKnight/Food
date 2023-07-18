@@ -1,0 +1,20 @@
+{
+  "userC": [
+    {
+      "nome": "Gael Knight",
+      "user": "gaiK",
+      "email": "kirajota1@gmail.com",
+      "telefone": "99999-8888",
+      "senha": "12312354",
+      "id": 1
+    },
+    {
+      "nome": "Giovanna Martins",
+      "user": "gio",
+      "email": "gio@gmail.com",
+      "telefone": "99999-8888",
+      "senha": "12312354",
+      "id": 2
+    }
+  ]
+}

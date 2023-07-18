@@ -4,12 +4,12 @@ import Logo from "../../assets/logoCompleta.png"
 import { Image, View, StyleSheet } from "react-native";
 import Invisivel from "../botao/Invisivel";
 
-export default function HeaderCad (){
+export default function HeaderCad (props){
     return(
         <View style={estilos.box}>
             <Invisivel name='Voltar' style={estilos.but} />
                     <Image source={Logo} style={estilos.logo}/> 
-            <Invisivel name='Salvar' style={estilos.but}  />
+            <Invisivel name='Salvar' style={estilos.but} user={props}  />
         </View>
     )};
 

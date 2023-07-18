@@ -5,10 +5,11 @@ import { StyleSheet, View } from "react-native"
 import CartaoAvalia from "../../components/Cartao/CartaoAvalia"
 
 
-export default function Perfil(){
+export default function Perfil({route,  navigation}){
+    console.log(route.params.user)
     return(
         <View style={estilos.frame} >
-            <HeaderPerfil/>
+            <HeaderPerfil nome={route.params.user}/>
 
             <View > 
                 <CartaoAvalia/>
